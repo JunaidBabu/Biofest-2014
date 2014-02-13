@@ -11,5 +11,10 @@ class Events extends CI_Controller {
 	{
 			$this->load->view('events');
 	}
+	public function biobiz(){
+		$this->load->view('header');
+		$this->load->view('events');
+		$this->load->view('footer');
+	}
 }
 ?>

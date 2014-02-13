@@ -4,19 +4,24 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 
-<!-- Optional theme -->
+<!-- Optional theme 
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+-->
 <link href='http://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet' type='text/css'>
 <link href='//cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.min.css' rel='stylesheet' type='text/css'>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <style type="text/css">
 
-a {
+nav a {
     color: white;
     text-decoration: none;
 }
 
-a:hover 
+nav a:hover 
 {
      color:#00A0C6; 
      text-decoration:none; 
@@ -96,8 +101,8 @@ border-radius: 4px;
 </head>
 
 <body>
-
-  <a href="home"><img src="<?=base_url('assets/img/logo.png')?>" style="position: absolute; height: 65px; left: 350px; top: 50px; z-index:1;"></a>
+<nav>
+  <a href="home"><img src="<?=base_url('assets/img/logo.png')?>" style="position: absolute; height: 65px; left: 350px; top: 50px; z-index:1;"></a></nav>
 
   <a href="google" class="btn btn-success" style="
     right: 75px;

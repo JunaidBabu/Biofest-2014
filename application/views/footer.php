@@ -16,23 +16,7 @@
 </body>
 
 <!-- Latest compiled and minified JavaScript -->
-<div class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Event</h4>
-      </div>
-      <div class="modal-body">
-        <p>Other details</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Register</button>
-<!--         <button type="button" class="btn btn-primary">Save changes</button> -->
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.min.js"></script>
 
 <script type="text/javascript">
@@ -52,12 +36,7 @@
 //         }
 //     });
 // });
-var $modal = $('.modal').modal({
-    show: false
-});
-$('#dropDiv').on('click', function() {
-    $modal.modal('show');
-});
+
 
 $("nav a").click(function(e) {
   e.preventDefault();
