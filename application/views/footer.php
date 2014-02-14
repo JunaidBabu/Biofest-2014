@@ -38,7 +38,7 @@
 // });
 
 
-$("nav a").click(function(e) {
+$(".nav a").click(function(e) {
   e.preventDefault();
     var $this = $(this),
         href = $this.attr("href");
@@ -64,5 +64,7 @@ NProgress.start();
     //location.href = "#" + href;
     
 });
+
+
 </script>
-</html> 
+</html>

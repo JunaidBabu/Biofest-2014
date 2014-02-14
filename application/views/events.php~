@@ -215,3 +215,9 @@ function randomeffect(){
    },1500);
 });
 </script>
+<script type="text/javascript">
+	$(".supernav").children().each(function(){
+		if(!$(this).contain("event"))
+  			$(this).attr("class","");
+  	});
+</script>
