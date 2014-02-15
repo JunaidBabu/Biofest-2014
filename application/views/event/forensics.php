@@ -13,47 +13,23 @@
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane fade active in" id="home">
-        <p>Entrepreneurship is living a few years of your life like most people won’t, so that you can spend the rest of your life like most people can't.
-
-Are you inspired by the likes of Kiran Mazumdar Shaw and Larry Page? Do you dream of starting up your own company in your garage? You just got lucky!
-
-Biofest, the annual festival of Dept. Of Biotechnology, IIT Madras presents BioBiz, a Biotech oriented B-plan Competition which aims to inspire individuals to dream of, conceptualize, design and develop their ideas into implementable business plans. The event acts as a platform to the participants for conceptualizing potential breakthroughs in the diverse fields of Biotechnology and also provides a great opportunity to interact with successful entrepreneurs and angel investors.
-
-The event also includes lectures (open to all) by the panelists providing crucial insights regarding establishing a Start up.
-
-Cash worth Rs.8,000 is up for grabs.</p>
+      <br>
+        <p>
+        <strong>"When you have eliminated the impossible, whatever remains, however improbable, must be the truth.”</strong></p>
+        <p>But would this truth suffice to identify the culprit, from a range of suspects, one of whom committed a murder in the Department of Biotechnology?</p>
+        <p>Get ready to rack your brains to search for subtly hidden clues and trace evidences near the crime scene, uncover fingerprints, perform various hands-on activities at Biofest's one and only, unique mystery solving event.</p>
+        <p>If you are the one who is fascinated by murder and mystery, here's your chance. Don the role of a detective in Forensics at Biofest 2013 and nab the cold blooded killer!
+</p>
       </div>
       <div class="tab-pane fade" id="rules">
-        <p>• Only Biotechnology oriented B-plans are allowed.</p>
-      <p>• A maximum of 5 members can form a team.</p>
-      <p>• Business Plan for submission is to be specific enough that it can be presented
-within 15 mins.</p>
+      <br>
+        <p>• Participation in teams of three for the prelims.</p>
+        <p>Basic knowledge about forensics and some commonly used forensics techniques is recommended.</p>
       </div>
       <div class="tab-pane fade" id="format">
-        <p>The participants should mail a presentation according to the format mentioned below to
-biobiz@biofest.in by 6th April 11:59 pm.</p>
-<strong>Format of the presentation to be submitted:</strong>
-<p>The presenter is free to follow any structure but it is recommended that he /she covers most of
-the following aspects:</p>
-<br>What is the Idea, Problem/Need in the market that the idea proposes to address?
-<br>How will the idea solve that problem?
-<br>What kind of technologies/ expertise you require?
-<br>What is the target market and why should the target market buy this idea?
-<br>What is the size of the market and the competition present?
-<br>What are the obstacles to your business plan?
-<br>How much Investment is needed to implement the Idea and how do you plan to raise those
-funds?
-<br>What is the time needed to start-up/incubate your company?
-
-<p>Details of the team members are to be included.</p>
-
-<p>The shortlisted teams will receive an email from the Biofest team by 8th April. The short listing is
-based on how well each of the above mentioned aspects is addressed.</p>
-
-<p>These selected few would be called to present their business plan during Biofest (which will be
-held 13-14 April). These shortlisted teams would receive valuable inputs and personalized tips
-from eminent panelists, which will help them refine their business plan. The panel would consist
-of IIT Madras faculty, Angel Investors and personnel from BioIncubator.</p>
+      <br>
+        <p>• Preliminary round in the form of a quiz where participants will be tested on their basic knowledge of forensics. Qualifiers from the preliminary round will be selected for the final round.</p>
+        <p>• The final round will host a cleverly simulated crime scene where the finalists have to analyse and search for the hidden clues and perform various hands-on activities to nab the culprit.</p>
       </div>
       <div class="tab-pane fade" id="contact">
         <p></p>

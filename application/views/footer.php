@@ -46,7 +46,17 @@ preload([
     "<?=base_url('assets/img/events/OPENQUIZ.png')?>",
     "<?=base_url('assets/img/events/PAPER.png')?>",
     "<?=base_url('assets/img/events/STREAX.png')?>",
-    "<?=base_url('assets/img/events/WEBOFLIFE.png')?>"
+    "<?=base_url('assets/img/events/WEBOFLIFE.png')?>",
+    "<?=base_url('assets/img/events/biobiz1.png')?>",
+    "<?=base_url('assets/img/events/biorobotics1.png')?>",
+    "<?=base_url('assets/img/events/forensics1.png')?>",
+    "<?=base_url('assets/img/events/gelart1.png')?>",
+    "<?=base_url('assets/img/events/ignobel1.png')?>",
+    "<?=base_url('assets/img/events/industry defined problems1.png')?>",
+    "<?=base_url('assets/img/events/openquiz1.png')?>",
+    "<?=base_url('assets/img/events/paper1.png')?>",
+    "<?=base_url('assets/img/events/streax1.png')?>",
+    "<?=base_url('assets/img/events/weboflife1.png')?>"
 ]);
 
 $(".ajax a").click(function(e) {

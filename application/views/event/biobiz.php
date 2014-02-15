@@ -13,9 +13,10 @@
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane fade active in" id="home">
+      <br>
         <p>Entrepreneurship is living a few years of your life like most people won’t, so that you can spend the rest of your life like most people can't.
 
-Are you inspired by the likes of Kiran Mazumdar Shaw and Larry Page? Do you dream of starting up your own company in your garage? You just got lucky!
+</p><p>Are you inspired by the likes of Kiran Mazumdar Shaw and Larry Page? Do you dream of starting up your own company in your garage?</p><p> You just got lucky!
 
 Biofest, the annual festival of Dept. Of Biotechnology, IIT Madras presents BioBiz, a Biotech oriented B-plan Competition which aims to inspire individuals to dream of, conceptualize, design and develop their ideas into implementable business plans. The event acts as a platform to the participants for conceptualizing potential breakthroughs in the diverse fields of Biotechnology and also provides a great opportunity to interact with successful entrepreneurs and angel investors.
 
@@ -24,6 +25,7 @@ The event also includes lectures (open to all) by the panelists providing crucia
 Cash worth Rs.8,000 is up for grabs.</p>
       </div>
       <div class="tab-pane fade" id="rules">
+      <br>
         <p>• Only Biotechnology oriented B-plans are allowed.</p>
       <p>• A maximum of 5 members can form a team.</p>
       <p>• Business Plan for submission is to be specific enough that it can be presented

@@ -13,47 +13,85 @@
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane fade active in" id="home">
-        <p>Entrepreneurship is living a few years of your life like most people won’t, so that you can spend the rest of your life like most people can't.
-
-Are you inspired by the likes of Kiran Mazumdar Shaw and Larry Page? Do you dream of starting up your own company in your garage? You just got lucky!
-
-Biofest, the annual festival of Dept. Of Biotechnology, IIT Madras presents BioBiz, a Biotech oriented B-plan Competition which aims to inspire individuals to dream of, conceptualize, design and develop their ideas into implementable business plans. The event acts as a platform to the participants for conceptualizing potential breakthroughs in the diverse fields of Biotechnology and also provides a great opportunity to interact with successful entrepreneurs and angel investors.
-
-The event also includes lectures (open to all) by the panelists providing crucial insights regarding establishing a Start up.
-
-Cash worth Rs.8,000 is up for grabs.</p>
+        <p>"Research is to see what everybody else has seen, and to think what nobody else has thought " - Albert Szent</p>
+        <p>This event acts as a platform to unite all the inquisitive minds together .It is an opportunity for all the ingenious minds to showcase their original research work .The event promises to be a great learning experience by testing every participant's deep knowledge for the subject, innovation and their presenting skills . The works would be evaluated by an elite panel of judges.</p>
+        <p>Posters and papers are invited on the following topics 
+        <br>1.Epigenetics
+        <br>2.Proteomics
+        <br>3.Stem Cells</p>
       </div>
       <div class="tab-pane fade" id="rules">
-        <p>• Only Biotechnology oriented B-plans are allowed.</p>
-      <p>• A maximum of 5 members can form a team.</p>
-      <p>• Business Plan for submission is to be specific enough that it can be presented
-within 15 mins.</p>
+        <p>• Submission of abstract is followed by full length article submission only on acceptance for review.</p>
+        <p>• The abstract should be brief containing atmost 300 words . The word limit of full length paper is 4500 words(including tables,figures,references etc)</p>
+        <p>• The paper should contain an introduction , hypothesis , experiments , results , deviations , conclusion and finally references.</p>
+        <p>• All the abstracts for both should be mailed to paperandposter@biofest.in with their team name , topic and mentioning if it is Paper presentation or Poster presentation.</p>
+        <p>• Deadline for online submission of abstracts is 1st April,2013 till 6pm.</p>
+        <p>• A maximum of 4 members can form a team.</p>
+        <p><u>Paper presentation</u>
+        <br>• Best few teams will be selected and would be invited to present during Biofest , 2013 at IIT Madras . 
+        <br>• The teams have to submit their papers electronically in pdf format once they are intimated. 
+        <br>• The presentation (of the short listed participants) should last a maximum of 8 minutes. There will be a 3-minute question and answer session following it. 
+        <br>• The participants will have to present their paper in Microsoft PowerPoint 2003. 
+        <br>• All the members of the team should be present during the event. 
+        <br>• The papers will be judged on the basis of their innovation, in depth knowledge of the field and presentation skills.</p>
+        <p><u>Poster presentation</u>
+        <br>• Best few teams would be selected for poster presentation based on the submission of abstracts. 
+        <br>• The shortlisted participants should present their research work in a poster of 0.85m(width)*1.2m(height) 
+        <br>• Each team would be given 5minutes to present their posters to the judges.
+        <br>• All the members of the team should be present during the event. 
+        <br>• The papers will be judged on the basis of their innovation, in depth knowledge of the field and presentation skills.
       </div>
       <div class="tab-pane fade" id="format">
-        <p>The participants should mail a presentation according to the format mentioned below to
-biobiz@biofest.in by 6th April 11:59 pm.</p>
-<strong>Format of the presentation to be submitted:</strong>
-<p>The presenter is free to follow any structure but it is recommended that he /she covers most of
-the following aspects:</p>
-<br>What is the Idea, Problem/Need in the market that the idea proposes to address?
-<br>How will the idea solve that problem?
-<br>What kind of technologies/ expertise you require?
-<br>What is the target market and why should the target market buy this idea?
-<br>What is the size of the market and the competition present?
-<br>What are the obstacles to your business plan?
-<br>How much Investment is needed to implement the Idea and how do you plan to raise those
-funds?
-<br>What is the time needed to start-up/incubate your company?
+        <p><div class="subaccordion">
+      <p><strong>Paper format:</strong>
 
-<p>Details of the team members are to be included.</p>
+The paper should be in the form of <strong>PDF</strong> (with an <strong>A4</strong> page size).
+</br>1. The line spacing must be 1.5.
+</br>2. The paper should necessarily have an abstract and its first title should
+necessarily be Introduction. The last two titles of the paper should necessarily
+be Conclusion and References.
+</br>3. The other recommended titles are Literature survey, Hypothesis, Numerical
+studies, Experiments, Theoretical background and Model Development,
+Results and Discussion. Deviations from these titles are allowed.
+</br>4. Suitable margin (say 1 inch) on each side of the text must be provided.
+</br>5. Easily readable fonts are recommended( preferably Times New Roman)
+</br>6. Figures, tables and charts must be included within the body of the paper.
+</br>7. The reference numbers inside the text should be preferably in superscripts.
+</br>8. Corresponding author should indicate his address, phone number and fax
+number (if any).
+</br>9. Referencing style: The style of referencing should be uniform and consistent,
+i.e. author’s name followed by title of the article, name of the journal/
+conference, year of publication, volume no., issue no., participation,page no.
+(pp).
+</br>10. The paper would be rejected if the given format is not followed.
+</p>
 
-<p>The shortlisted teams will receive an email from the Biofest team by 8th April. The short listing is
-based on how well each of the above mentioned aspects is addressed.</p>
+<p><strong>Poster format:</strong>
+</br>
+1. The paper for poster presentation should be submitted as per the
+guidelines mentioned above (for paper presentation).
+</br>
+2. Full length paper has to be submitted only after selection in the first
+round.
+</br>
+3. The poster should necessarily have an abstract and its first title should
+necessarily be Introduction.
+</br>4. The other recommended titles are title, abstract, introduction, theory,
+results, discussion. Deviations from these titles are allowed.
+</br>5. Size of poster- 0.85m×1.2m and its orientation should be portrait style.
+</br>6. Avoid using more than two font types. Recommended font styles are
+Times New Roman and Arial.
+• <strong>Title characters</strong> must be of <strong>48 point font size</strong>.
+• <strong>Headings 28-32 point font size</strong> is recommended for headings.
+• <strong>Content-14- 20 point font size</strong> is recommended. The text should be
+concise and easy to read.
+</br >7. Suitable margin (say 1 inch) on each side of the text must be provided.</br>
+8. No other format would be entertained.
 
-<p>These selected few would be called to present their business plan during Biofest (which will be
-held 13-14 April). These shortlisted teams would receive valuable inputs and personalized tips
-from eminent panelists, which will help them refine their business plan. The panel would consist
-of IIT Madras faculty, Angel Investors and personnel from BioIncubator.</p>
+<i></br>• Participants are expected to check biofest website regularly and keep themselves updated about the event.
+</br>• List of short-listed candidates would be uploaded in the biofest website.
+</br>• Decision of the judges is final.</i>
+</p></div>
       </div>
       <div class="tab-pane fade" id="contact">
         <p></p>
