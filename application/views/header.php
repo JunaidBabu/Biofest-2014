@@ -1,6 +1,9 @@
 <html>
 <head>
 <title>Biofest 2014</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Through Biofest, the annual technical festival of the Department of Biotechnology, IIT Madras, we intend to celebrate this great discipline that has enlightened us for centuries and has applications in every aspect of life. We endeavour to indulge the enthusiasts, learn from the learned, and teach those with an open mind. We hope to inculcate a passion for this discipline and provide a platform for students and researchers alike to showcase their illustrious work.">
+<link rel="shortcut icon" href="http://www.biofest.in/2013/main//img/favicon.ico" type="image/x-icon" /> 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 
@@ -14,7 +17,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.min.js"></script>
 <link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>" />
 <style type="text/css">
 
@@ -32,20 +35,24 @@
     height: 100%;
   }
   #iitm_logo{
-    background-image: url("<?=base_url('assets/img/iitm_logo.png')?>");
+    position: fixed;
+right: 75px;
+bottom: 5px;
+background-repeat: no-repeat;
+width: 80;
   }
   
   #footer{
     background: #2B5E02;
     height: 90px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
-    z-index: -1;
+    z-index: 0;
     left: 0;
     right: 0;
   }
   #social{
-    position: absolute;
+    position: fixed;
     right: 50px;
     bottom: 100px;
   }
@@ -74,9 +81,9 @@ border-radius: 4px;
 .contain{
     position: absolute; 
     right: 46px; 
-    height: 53%;
+    height: 57%;
     top: 125px;
-    width: 70%;
+    width: 71%;
     padding: 11px;
     margin: 15px;
 }
@@ -92,10 +99,35 @@ border-radius: 4px;
 .navbar-default .navbar-nav>li>a {
 color: white;
 }
+#dvLoading
+{
+   background:#000 url("<?=base_url('assets/img/logo_large2.png')?>") no-repeat center center;
+   height: 100px;
+   width: 100px;
+   position: fixed;
+   z-index: 1000;
+   left: 50%;
+   top: 50%;
+   margin: -25px 0 0 -25px;
+}
+body{
+  display: none;
+}
 </style>
 </head>
 
+<script>
+//NProgress.start();
+$(window).load(function(){
+  NProgress.start();
+  NProgress.done();
+  $("body").fadeIn("slow");
+});
+
+</script>
 <body>
+
+
 <nav>
   <a href="home"><img src="<?=base_url('assets/img/logo.png')?>" style="position: absolute; height: 65px; left: 350px; top: 50px; z-index:1;"></a></nav>
 <!--
@@ -111,11 +143,32 @@ color: white;
         <div class="collapse navbar-collapse pull-right">
           <ul class="supernav nav navbar-nav">
           <!--  <li class="active"><a href="/">Home</a></li>-->
-            <li id="events"><a href="events">Events</a></li>
-            <li id="spons"><a href="sponsorship">Sponsorship </a></li>
-            <li id="hospi"><a href="hospitality">Hospitality</a></li>
-            <li id="schedule"><a href="schedule">Schedule</a></li>
-            <li id="contact"><a href="contactus">Contact Us</a></li>
+            <li id="events" class="ajax" ><a href="events">Events</a></li>
+            <li id="spons" class="ajax"><a  href="sponsorship">Sponsorship </a></li>
+            <li id="hospi" class="ajax"><a  href="hospitality">Hospitality</a></li>
+            
+            <li id="contactus" class="ajax"><a href="contactus">Contact Us</a></li>
+            <li class="divider"></li>
+            <li class="dropdown">
+            <?php
+                if($this->session->userdata('name')){
+                  echo '<a href="" class="dropdown-toggle" data-toggle="dropdown">'.$this->session->userdata('name').'<b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                   <li><a href='.base_url('home/logout').'>Logout</a></li>
+                   </ul>';
+                }else{
+                  echo '<a href="" class="dropdown-toggle" data-toggle="dropdown">Login/Register <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                <li class="dropdown-header">Sign in with</li>
+                <li><a href='.base_url('auth/session/google').'>Google</a></li>
+                <li><a href='.base_url('auth/session/facebook').'>Facebook</a></li>
+              </ul>';
+                }
+                //echo $this->session->userdata('email');
+                ?>
+              
+              
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

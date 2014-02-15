@@ -121,6 +121,7 @@ position: absolute;
 var $modal = $('.modal').modal({
     show: false
 });
+
 $("#divcontainer1").children().each(function(){
 	$(this).on('click', function() {
 	NProgress.start();

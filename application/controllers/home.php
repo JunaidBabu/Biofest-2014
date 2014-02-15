@@ -19,9 +19,12 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		if($this->session->userdata('email'))
-			echo "Welcome ".$this->session->userdata('name')." <a href=".base_url('index.php/beta/logout').">Logout</a>";
-		else
+		if($this->session->userdata('email')){
+			
+		}
+			
+			//echo "Welcome ".$this->session->userdata('name')." <a href=".base_url('index.php/beta/logout').">Logout</a>";
+		//else
 			//echo $this->session->userdata($data);
 			$this->load->view('header');
 			$this->load->view('welcome_message');

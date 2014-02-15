@@ -1,4 +1,4 @@
- <?php
+<?php
 class Auth extends CI_Controller
 {
     public function session($provider)
@@ -10,14 +10,14 @@ class Auth extends CI_Controller
         $site = $provider;
         if($site=="facebook"){
             $provider = $this->oauth2->provider($provider, array(
-                'id' => '422953697831758',
-                'secret' => 'c429dc4f7eb8d5b188e86d6dd16e172e',
+                'id' => '524173977626420',
+                'secret' => 'dc81c4d35e6dbd991af0fd5c25a46f67',
 
             ));
         }else{
             $provider = $this->oauth2->provider($provider, array(
-                'id' => '776685009882-v1kcqutjjt9k7h1e2qobjugqrgn9srel.apps.googleusercontent.com',
-                'secret' => 'sDK-e4GvFjp58ZTx23c4FQjz',
+                'id' => '1010103057111.apps.googleusercontent.com',
+                'secret' => 'GD0-1xT597ST5THkezpgO8Nl',
 
             ));
         }
@@ -30,7 +30,7 @@ class Auth extends CI_Controller
             // By sending no options it'll come back here
             
             $url = $provider->authorize();
-            echo $url;
+            //echo $url;
             redirect($url);
             //header('Location: '.$url);
         }
@@ -45,17 +45,17 @@ class Auth extends CI_Controller
 
                 // Here you should use this information to A) look for a user B) help a new user sign up with existing data.
                 // If you store it all in a cookie and redirect to a registration page this is crazy-simple.
-                echo "<pre>Tokens: ";
+                //echo "<pre>Tokens: ";
                 //var_dump($token);
-                echo $token->access_token;
-                echo $user['email'];
+                //echo $token->access_token;
+                //echo $user['email'];
                 //echo $email;
                 $this->load->database();
                 
                 $query=$this->db->get_where('access_tokens',array('email'=>$user['email'],'provider'=>$site));
                 //var_dump($query);
                 $count = $query->num_rows(); 
-                echo "Count: ".$count;
+                //echo "Count: ".$count;
                 
                 if($count>0)  // id found stop
                    {
