@@ -113,6 +113,9 @@ color: white;
 body{
   display: none;
 }
+.text-justify {
+  text-align: justify;
+}
 </style>
 </head>
 

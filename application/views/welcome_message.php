@@ -7,28 +7,8 @@
 </div>
   <div class="col-md-6">
   	<h1>Welcome to Biofest 2014</h1>
-<p>
-After a successful 2nd
-
-events for students to identify and showcase their talent. After a prosperous outcome from 
-
-the first two editions, Department of Biotechnology, IIT Madras would be privileged to invite 
-
-your students to represent your college on this national platform. Please find attached a brief 
-
-description of events which we believe you would be interested in taking part. Apart from 
-
-these we will be organizing certified workshops during Biofest. Biofest 2014 also brings back 
-
-an array of lectures and video conferences, catering to the various aspects of the modern day 
-
-research in biological sciences and biological engineering streams. We believe that this will be 
-
-an amazing opportunity for your students to learn from and interact with the best.
-
- edition, Biofest returns with its 3rd
-
- edition with much more exciting
+<p class="text-justify">
+After a successful  2nd Edition, Biofest returns with its 3rd Edition with many more exciting  events for students to identify and showcase their talent. Through Biofest, the annual technical festival of the Department of Biotechnology, IIT Madras, we intend to celebrate this great discipline that has enlightened us for centuries and has applications in every aspect of life. We endeavour to indulge the enthusiasts, learn from the learned, and teach those with an open mind. We hope to inculcate a passion for this discipline and provide a platform for students and researchers alike to showcase their illustrious work. 
  </p>
   </div>
 </div>
