@@ -122,10 +122,12 @@ body{
 <script>
 //NProgress.start();
 $(window).load(function(){
-  NProgress.start();
-  NProgress.done();
   $("body").fadeIn("slow");
 });
+
+$(document).on('page:fetch',   function() { NProgress.start(); });
+$(document).on('page:change',  function() { NProgress.done(); });
+$(document).on('page:restore', function() { NProgress.remove(); });
 
 </script>
 <body>
@@ -162,7 +164,22 @@ $(window).load(function(){
                 }else{
                   echo '<a href="" class="dropdown-toggle" data-toggle="dropdown">Login/Register <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                <li class="dropdown-header">Sign in with</li>
+                  <form action="" method="post" accept-charset="UTF-8" style="
+    margin: 7;
+">
+  <input class="form-control" type="text" name="email" placeholder="Email" style="
+    margin:;
+" autocomplete="off">
+  <input class="form-control" type="password" name="password" placeholder="Password" style="
+    margin-top: 5;
+    margin-bottom: 5;
+">
+  <input class="btn btn-success" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In">
+<a href="#" align="center" style="margin-left: 40;">Register</a>
+</form>
+
+
+                <li class="dropdown-header">or Sign in with</li>
                 <li><a href='.base_url('auth/session/google').'>Google</a></li>
                 <li><a href='.base_url('auth/session/facebook').'>Facebook</a></li>
               </ul>';

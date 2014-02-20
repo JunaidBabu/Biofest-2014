@@ -10,7 +10,7 @@ We look forward to have a great time with you!!!<br>
 
 The Hospitality Team is here to guide you throughout your stay with us. In case of any queries please feel free to contact us :<br><br>
 
-<strong>Prathyusha Konda 7200631666<br>
+<strong>Prathyusha Konda<br>
 <a href="mailto:hospitality@biofest.in" target="blank">
 hospitality@biofest.in</a></strong>
 <p></p>

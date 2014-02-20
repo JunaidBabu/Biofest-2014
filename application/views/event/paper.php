@@ -13,30 +13,46 @@
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane fade active in" id="home">
-        <p>"Research is to see what everybody else has seen, and to think what nobody else has thought " - Albert Szent</p>
+      <br>
+        <p>"Do research. Feed your talent. Research not only wins the war on cliché, it's the key to victory over fear and it's cousin, depression." - Robert McKee</p>
         <p>This event acts as a platform to unite all the inquisitive minds together .It is an opportunity for all the ingenious minds to showcase their original research work .The event promises to be a great learning experience by testing every participant's deep knowledge for the subject, innovation and their presenting skills . The works would be evaluated by an elite panel of judges.</p>
         <p>Posters and papers are invited on the following topics 
-        <br>1.Epigenetics
-        <br>2.Proteomics
-        <br>3.Stem Cells</p>
+        <li>Molecular Dynamics Simulations</li>
+        <li>Macro Molecular Interactions</li>
+        <li>Bio Robotics / Bio Mimetic</li>
+        <li>Bio-Technology for Energy Conservation</li>
+        <li>Bio-technology & Drug Discovery</li>
+        <li>Regenerative Biology</li>
+        <li>Immunology</li>
+        <li>Synthetic Biology</li>
+        <li>Virology</li>
+        <li>Omics Technologies</li>
+        <li>Tissue Engineering</li>
+        <li>Systems Biology</li>
+        <li>Mathematical Modelling </li>
+        <li>Stem Cells</li>
+        
+        </p>
+        <p>*any other interesting topics relating to Bio-Technology are also invited.</p>
       </div>
       <div class="tab-pane fade" id="rules">
+      <br>
         <p>• Submission of abstract is followed by full length article submission only on acceptance for review.</p>
         <p>• The abstract should be brief containing atmost 300 words . The word limit of full length paper is 4500 words(including tables,figures,references etc)</p>
         <p>• The paper should contain an introduction , hypothesis , experiments , results , deviations , conclusion and finally references.</p>
         <p>• All the abstracts for both should be mailed to paperandposter@biofest.in with their team name , topic and mentioning if it is Paper presentation or Poster presentation.</p>
-        <p>• Deadline for online submission of abstracts is 1st April,2013 till 6pm.</p>
+        <p>• Deadline for online submission of abstracts is  <span style="color:red"><strong>28 February, 2014 till 6pm.</strong></span></p>
         <p>• A maximum of 4 members can form a team.</p>
-        <p><u>Paper presentation</u>
-        <br>• Best few teams will be selected and would be invited to present during Biofest , 2013 at IIT Madras . 
+        <p><u><strong>Paper presentation</strong></u>
+        <br>• Best few teams will be selected and would be invited to present during Biofest , 2014 at IIT Madras . 
         <br>• The teams have to submit their papers electronically in pdf format once they are intimated. 
         <br>• The presentation (of the short listed participants) should last a maximum of 8 minutes. There will be a 3-minute question and answer session following it. 
-        <br>• The participants will have to present their paper in Microsoft PowerPoint 2003. 
+        <br>• The participants will have to present their paper in Microsoft PowerPoint. 
         <br>• All the members of the team should be present during the event. 
         <br>• The papers will be judged on the basis of their innovation, in depth knowledge of the field and presentation skills.</p>
-        <p><u>Poster presentation</u>
+        <p><u><strong>Poster presentation</strong></u>
         <br>• Best few teams would be selected for poster presentation based on the submission of abstracts. 
-        <br>• The shortlisted participants should present their research work in a poster of 0.85m(width)*1.2m(height) 
+        <br>• The shortlisted participants should present their research work in a poster of <strong>0.85m(width)*1.2m(height) </strong>
         <br>• Each team would be given 5minutes to present their posters to the judges.
         <br>• All the members of the team should be present during the event. 
         <br>• The papers will be judged on the basis of their innovation, in depth knowledge of the field and presentation skills.
@@ -80,24 +96,39 @@ necessarily be Introduction.
 results, discussion. Deviations from these titles are allowed.
 </br>5. Size of poster- 0.85m×1.2m and its orientation should be portrait style.
 </br>6. Avoid using more than two font types. Recommended font styles are
-Times New Roman and Arial.
-• <strong>Title characters</strong> must be of <strong>48 point font size</strong>.
-• <strong>Headings 28-32 point font size</strong> is recommended for headings.
-• <strong>Content-14- 20 point font size</strong> is recommended. The text should be
-concise and easy to read.
+<b>Times New Roman</b> and <b>Arial</b>.
+<ul>
+  <li><strong>Title characters</strong> must be of <strong>48 point font size</strong>.</li>
+  <li><strong>Headings 28-32 point font size</strong> is recommended for headings.</li>
+  <li><strong>Content-14- 20 point font size</strong> is recommended. The text should be
+concise and easy to read.</li>
+</ul>
 </br >7. Suitable margin (say 1 inch) on each side of the text must be provided.</br>
 8. No other format would be entertained.
 
-<i></br>• Participants are expected to check biofest website regularly and keep themselves updated about the event.
+</br>• Participants are expected to check biofest website regularly and keep themselves updated about the event.
 </br>• List of short-listed candidates would be uploaded in the biofest website.
-</br>• Decision of the judges is final.</i>
+</br><strong>• Decision of the judges is final.</strong>
 </p></div>
       </div>
       <div class="tab-pane fade" id="contact">
-        <p></p>
+      <div class="span6 offset3" style="text-align:center;">
+      <br>
+
+        <p>
+          Bharath ― 09176762758 
+<br>
+Lakshmi Mounika ― 09962670906
+<br>
+Gaurav ― 08275291755 
+<br>
+Mail your queries to <i><a href="mailto:paperandposter@biofest.in" target="blank">paperandposter@biofest.in</a></i>
+
+        </p>
+        </div>
       </div>
       <div class="tab-pane fade" id="register">
-        <p></p>
+        <p><br>Registration will start soon...</p>
       </div>
     </div>
   </div>

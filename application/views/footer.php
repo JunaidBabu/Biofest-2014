@@ -74,6 +74,18 @@ NProgress.start();
             $('.contain').html(data);
             window.history.pushState({"html":data.html,"pageTitle":data.pageTitle},"", href);
             NProgress.done();
+            $(".supernav>li.active").removeClass("active");
+url = document.URL;
+String.prototype.contains = function(it) { return this.indexOf(it) != -1; };
+if(url.contains("event")){
+    $("#events").addClass("active")
+}else if(url.contains("spons")){
+    $("#spons").addClass("active")
+}else if(url.contains("hospi")){
+    $("#hospi").addClass("active")
+}else if(url.contains("contactus")){
+    $("#contactus").addClass("active")
+}
             //alert("dne");
             return false;
         },
