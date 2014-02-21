@@ -78,15 +78,24 @@ class Auth extends CI_Controller
                     );
                 if($count>0)  // id found stop
                    {
+                    $row = $query->row_array(); 
+                 $data = array(
+                        'name'=>$row['name'],
+                        'email'=>$row['email'],
+                        'insti'=>$row['insti'],
+                        'dept'=>$row['dept']
+                        );
+                 $this->session->set_userdata($data);
                     //echo "\nAlready exist";
                     //redirect('auth');
                       
                    } else{
                     
                    $this->db->insert('users',$data); 
+                   $this->session->set_userdata($data);
                    }
 
-                   $this->session->set_userdata($data);
+                   
                    redirect('/');
 
                  

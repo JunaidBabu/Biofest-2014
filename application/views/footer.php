@@ -133,7 +133,7 @@ box-shadow: inset 0 0 50px 0 #939393;
 border-radius: 5px;
 margin: -220px 0 0 -375px;
 }
-#fanclose {
+/*#fanclose {
 float: right;
 cursor: pointer;
 background: url(http://3.bp.blogspot.com/-NRmqfyLwBHY/T4nwHOrPSzI/AAAAAAAAAdQ/8b9O7O1q3c8/s1600/fanclose.png) no-repeat;
@@ -144,7 +144,7 @@ position: relative;
 padding-right: 40px;
 margin-top: -20px;
 margin-right: -22px;
-}
+}*/
 </style>
 
 

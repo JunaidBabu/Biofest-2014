@@ -12,7 +12,7 @@
 -->
 <link href='http://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet' type='text/css'>
 <link href='//cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.min.css' rel='stylesheet' type='text/css'>
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/smoothness/jquery-ui.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 
@@ -55,7 +55,7 @@ width: 80;
     position: fixed;
     right: 50px;
     bottom: 100px;
-  }
+  } 
   ul#menu {
     margin:0;
     padding:0;
@@ -129,10 +129,86 @@ $(document).on('page:fetch',   function() { NProgress.start(); });
 $(document).on('page:change',  function() { NProgress.done(); });
 $(document).on('page:restore', function() { NProgress.remove(); });
 
+$(document).ready(function(){
+  $("form#signinform").submit(function(event) {
+     
+        $("#regmessage").addClass("bg-info");
+        $("#regmessage").text("Loading...");
+        event.preventDefault();
+        var email = $("#semail").val();
+        var pass = $("#spass").val();
+        console.log(pass);
+        json = {'type':"sig",'email': email,'pass':pass};
+      // alert(JSON.stringify(json));
+        //var newmsg = $("#newmsg").val();
+       $.ajax({
+                url         : "<?=base_url('index.php/register')?>",
+                type        : 'POST',
+                ContentType : 'application/json',
+                data        : json
+            }).done(function(response){
+              //alert(response);
+                $("#regmessage").text(response);
+                if(response=="Success"){
+                  $("#regmessage").removeClass("bg-danger");
+                  $("#regmessage").addClass("bg-success");
+                  //alert(document.URL); 
+                  window.location.href =  document.URL;
+
+                }
+                //alert(response);
+            }).fail(function(jqXHR, textStatus, errorThrown){
+                alert('FAILED! ERROR: ' + errorThrown);
+            });
+          
+
+    });
+
+    $("form#registerform").submit(function(event) {
+        $("#regmessage").removeClass("bg-danger");
+        $("#regmessage").addClass("bg-info");
+        $("#regmessage").text("Loading...");
+        event.preventDefault();
+        var name = $("#rname").val();
+        var email = $("#remail").val();
+        var pass1 = $("#rpass1").val();
+        var pass2 = $("#rpass2").val();
+        var insti = $("#rinsti").val();
+        var dept = $("#rdept").val();
+        json = {'type':"reg",'email': email,'name':name,'pass':pass1,'insti':insti,'dept':dept};
+        if(pass1!=pass2){
+          $("#regmessage").addClass("bg-danger");
+          $("#regmessage").text("Passwords does not match");
+        }else{
+        //var newmsg = $("#newmsg").val();
+       $.ajax({
+                url         : "<?=base_url('index.php/register')?>",
+                type        : 'POST',
+                ContentType : 'application/json',
+                data        : json
+            }).done(function(response){
+                $("#regmessage").text(response);
+                if(response=="Success"){
+                  $("#regmessage").removeClass("bg-danger");
+                  $("#regmessage").addClass("bg-success");
+                  //alert(document.URL); 
+                  window.location.href =  document.URL;
+
+                }
+                //alert(response);
+            }).fail(function(jqXHR, textStatus, errorThrown){
+                alert('FAILED! ERROR: ' + errorThrown);
+            });
+          }
+
+    });
+
+});
+
 </script>
 <body>
 
-
+<p class="text-center <?php if(isset($class)) echo $class; ?>"><?php if(isset($message)) echo $message; ?></p>
 <nav>
   <a href="home"><img src="<?=base_url('assets/img/logo.png')?>" style="position: absolute; height: 65px; left: 350px; top: 50px; z-index:1;"></a></nav>
 <!--
@@ -148,6 +224,7 @@ $(document).on('page:restore', function() { NProgress.remove(); });
         <div class="collapse navbar-collapse pull-right">
           <ul class="supernav nav navbar-nav">
           <!--  <li class="active"><a href="/">Home</a></li>-->
+            <li class="ajax" ><a href="home">Home</a></li>
             <li id="events" class="ajax" ><a href="events">Events</a></li>
             <li id="spons" class="ajax"><a  href="sponsorship">Sponsorship </a></li>
             <li id="hospi" class="ajax"><a  href="hospitality">Hospitality</a></li>
@@ -159,10 +236,90 @@ $(document).on('page:restore', function() { NProgress.remove(); });
                 if($this->session->userdata('name')){
                   echo '<a href="" class="dropdown-toggle" data-toggle="dropdown">'.$this->session->userdata('name').'<b class="caret"></b></a>
                    <ul class="dropdown-menu">
+                   <li class="ajax"><a href="profile">Profile</a></li>
                    <li><a href='.base_url('home/logout').'>Logout</a></li>
                    </ul>';
                 }else{
-                  echo '<a href="" class="dropdown-toggle" data-toggle="dropdown">Login/Register <b class="caret"></b></a>
+                  echo '<li><a data-toggle="modal" data-target="#RegModal" href="#">Login/Register</a></li>';
+                }
+                //echo $this->session->userdata('email');
+                ?>
+              
+              
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="modal fade" id="RegModal" tabindex="-1" role="dialog" aria-labelledby="RegModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+        <div class="row">
+        <p id="regmessage" class="text-center bg-danger"></p>
+  <div class="col-md-6">
+
+  <h5 class="text-center">Login</h5>
+    <form id="signinform" method="post" accept-charset="UTF-8" style="margin: 7;">
+    <div class="input-group merged" style="margin-top: 10;" >
+      <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+     <input id="semail"class="form-control" type="email" name="email" placeholder="Email" required>
+  </div>
+  <div class="input-group merged" style="margin-top: 10; margin-bottom: 10;">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+      <input id="spass" class="form-control" type="password" name="pass1" placeholder="Password" required>
+  </div>
+ <input class="btn btn-success" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In">
+    </form>
+   <div class="row" style="
+    margin: 25;
+">
+ <h5 class="text-center">Or</h5>
+    <a class="btn btn-primary" style="clear: left; width: 90%; height: 32px; font-size: 13px;margin-bottom: 15;" href="<?=base_url('index.php/auth/session/facebook')?>">Sign in with Facebook</a>
+    <a class="btn btn-danger" style="clear: left; width: 90%; height: 32px; font-size: 13px;" href="<?=base_url('index.php/auth/session/google')?>">Sign in with Google</a>
+    </div>
+  </div>
+  <div class="col-md-6">
+  <h5 class="text-center">Register</h5>
+    <form id="registerform" method="post" accept-charset="UTF-8" style="margin: 7;">
+     <div class="input-group merged" style="margin-top: 5;" >
+      <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+      <input id="rname" class="form-control" type="text" name="name" placeholder="Full Name" required>
+  </div>
+  <div class="input-group merged" style="margin-top: 5;" >
+      <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+     <input id="remail"class="form-control" type="email" name="email" placeholder="Email" required>
+  </div>
+  <div class="input-group merged" style="margin-top: 5;">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+      <input id="rpass1" class="form-control" type="password" name="pass1" placeholder="Password" required>
+  </div>
+  <div class="input-group merged" style="margin-top: 5;">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+      <input id="rpass2" class="form-control" type="password" name="pass2" placeholder="Re-enter password" required>
+  </div>
+  <div class="input-group merged" style="margin-top: 5;">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-briefcase"></span></span>
+     <input id="rinsti" class="form-control" type="text" name="insti" placeholder="Name of Institution" required>
+  </div>
+     <div class="input-group merged"  style="margin-top: 5; margin-bottom: 5;" >
+      <span class="input-group-addon"><span class="glyphicon glyphicon-book"></span></span>
+     <input id="rdept" class="form-control" type="text" name="dept" placeholder="Department" required>
+  </div>
+   <input class="btn btn-success" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Register">
+      
+     </form>
+  </div>
+</div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--
+
+<a href="" class="dropdown-toggle" data-toggle="dropdown">Login/Register <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                   <form action="" method="post" accept-charset="UTF-8" style="
     margin: 7;
@@ -182,18 +339,8 @@ $(document).on('page:restore', function() { NProgress.remove(); });
                 <li class="dropdown-header">or Sign in with</li>
                 <li><a href='.base_url('auth/session/google').'>Google</a></li>
                 <li><a href='.base_url('auth/session/facebook').'>Facebook</a></li>
-              </ul>';
-                }
-                //echo $this->session->userdata('email');
-                ?>
-              
-              
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-<!--
+              </ul>
+
   <div id="navg">
   <nav>
     <ul id="menu">

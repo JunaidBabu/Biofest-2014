@@ -107,7 +107,7 @@ position: absolute;
 <div id="dropDiv9" event="streax"></div>
 <div id="dropDiv10" event="weboflife"></div>
 </div>
-<div class="modal fade">
+<div id="eventmodal" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
       
@@ -118,7 +118,7 @@ position: absolute;
 
 
 <script>
-var $modal = $('.modal').modal({
+var $modal = $('#eventmodal').modal({
     show: false
 });
 
